@@ -6,3 +6,16 @@ abstract class Failure extends Equatable {
   // so that Equatable can perform value comparison.
   Failure([List properties = const <dynamic>[]]);
 }
+
+// General failures
+class ServerFailure extends Failure {
+  @override
+  // TODO: implement props
+  List<Object?> get props => throw UnimplementedError();
+}
+
+class CacheFailure extends Failure {
+  @override
+  // TODO: implement props
+  List<Object?> get props => throw UnimplementedError();
+}
